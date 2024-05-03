@@ -1,0 +1,20 @@
+<!-- myapp/templates/my_template.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="id_state">State:</label>
+        <input type="text" name="state" id="id_state"><br>
+        <label for="id_season">Season:</label>
+        <input type="text" name="season" id="id_season"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- <button><a href="{% url 'chat' %}" style="text-decoration:none">click to chat</a></button> -->
+</body>
+</html>
